@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.checkout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout-form h2 {
+    margin-top: 20px;
+    color: #555;
+}
+
+label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+input[type="text"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.order-summary {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.order-summary p {
+    margin: 5px 0;
+}
+
+button {
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+/* Tablet Landscape */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /* Tambahkan gaya CSS khusus untuk tablet landscape di sini */
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+    /* Tambahkan gaya CSS khusus untuk tablet portrait di sini */
+}
+
+/* Smartphone */
+@media only screen and (max-width: 480px) {
+    /* Tambahkan gaya CSS khusus untuk smartphone di sini */
+}
