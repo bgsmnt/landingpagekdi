@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="/Checkout Page/styles.css">
+</head>
+<body>
+    <div class="checkout-container">
+        <h1>Checkout</h1>
+        <form class="checkout-form" id="checkout-form">
+            <h2>Shipping Information</h2>
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required>
+            
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" required>
+            
+            <label for="province">Province</label>
+            <select id="province" name="province" required></select>
+            
+            <label for="zip">Zip Code</label>
+            <input type="text" id="zip" name="zip" required>
+            
+            <label for="courier">Courier</label>
+            <select id="courier" name="courier" required>
+                <option value="jne">JNE</option>
+                <option value="pos">J&T</option>
+                <option value="tiki">SPX</option>
+            </select>
+            
+            <h2>Metode Pembayaran</h2>
+            <label>
+                <input type="radio" name="payment-method" value="ewallet" required>
+                E-Wallet
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="cod">
+                COD
+            </label>
+            <label>
+                <input type="radio" name="payment-method" value="bank-transfer">
+                Bank Transfer
+            </label>
+            
+            <h2>Order Summary</h2>
+            <div class="order-summary">
+                <p>Product Price: Rp. 60,000</p>
+                <p id="shipping-cost">Shipping Cost: Rp. 0,00</p>
+                <p><strong id="total-cost">Total: Rp. 0,00</strong></p>
+            </div>
+            
+            <button type="submit">Buat Pesanan</button>
+        </form>
+    </div>
+    <script src="/Checkout Page/script.js"></script>
+</body>
+</html>
